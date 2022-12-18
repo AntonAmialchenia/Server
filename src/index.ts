@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express'
+
 const app = express();
 const port = 3000;
 
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/samurai', (req, res) => {
-  res.send('Hello Anton!!!!!');
+  res.send('Hello Anton!');
 });
 
 app.post('/samurai', (req, res) => {
